@@ -1,0 +1,13 @@
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+<% @ethernet_interfaces.each do |interface| %>
+auto <%= interface %>
+iface <%= interface %> inet dhcp
+<% end %>
+
+<% @wlan_interfaces.each do |interface| %>
+auto <%= interface %>
+iface <%= interface %> inet dhcp
+<% end %>

@@ -39,6 +39,17 @@ Set the options for your environment if they differ.
 ```json
 {
   "orangepi_one": {
+    "ethernet": {
+      "interfaces": [
+        "eth0"
+      ]
+    },
+    "wlan": {
+      "interfaces": [
+        "wlan0",
+        "wlan1"
+      ]
+    }
   },
   "run_list": [
     "recipe[orangepi_one::default]"
