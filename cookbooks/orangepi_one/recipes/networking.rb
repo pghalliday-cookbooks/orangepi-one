@@ -1,11 +1,15 @@
-ethernet_interfaces = node['orangepi_one']['ethernet']['interfaces']
-wlan_interfaces = node['orangepi_one']['wlan']['interfaces']
+ethernet_interface = node['orangepi_one']['ethernet']['interface']
+wlan_interface = node['orangepi_one']['wlan']['interface']
+wpa_options = node['orangepi_one']['wlan']['wpa_options']
+
+package 'wpasupplicant'
 
 # configure networking
 template '/etc/network/interfaces' do
   variables(
-    ethernet_interfaces: ethernet_interfaces,
-    wlan_interfaces: wlan_interfaces
+    ethernet_interface: ethernet_interface,
+    wlan_interface: wlan_interface,
+    wpa_options: wpa_options
   )
   force_unlink true
   manage_symlink_source false

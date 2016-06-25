@@ -1,15 +1,14 @@
 {
   "orangepi_one": {
     "ethernet": {
-      "interfaces": [
-        "eth0"
-      ]
+      "interface": "eth0"
     },
     "wlan": {
-      "interfaces": [
-        "wlan0",
-        "wlan1"
-      ]
+      "interface": "wlan0",
+      "wpa_options": {
+        "ssid": "<ESSID>",
+        "psk": "<PASS_PHRASE>"
+      }
     }
   },
   "run_list": [

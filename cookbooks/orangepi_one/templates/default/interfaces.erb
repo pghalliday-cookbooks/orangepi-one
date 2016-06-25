@@ -2,12 +2,10 @@
 auto lo
 iface lo inet loopback
 
-<% @ethernet_interfaces.each do |interface| %>
-auto <%= interface %>
-iface <%= interface %> inet dhcp
-<% end %>
+auto <%= @ethernet_interface %>
+iface <%= @ethernet_interface %> inet dhcp
 
-<% @wlan_interfaces.each do |interface| %>
-auto <%= interface %>
-iface <%= interface %> inet dhcp
+auto <%= @wlan_interface %>
+iface <%= @wlan_interface %> inet dhcp
+<% @wpa_options.each do |option, value| %>        wpa-<%= option %> <%= value %>
 <% end %>

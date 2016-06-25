@@ -40,15 +40,13 @@ Set the options for your environment if they differ.
 {
   "orangepi_one": {
     "ethernet": {
-      "interfaces": [
-        "eth0"
-      ]
+      "interface": "<INTERFACE_NAME>"
     },
     "wlan": {
-      "interfaces": [
-        "wlan0",
-        "wlan1"
-      ]
+      "interface": "<INTERFACE_NAME>",
+      "wpa_options": {
+        ...
+      }
     }
   },
   "run_list": [
