@@ -1,0 +1,8 @@
+name 'orangepi_one'
+maintainer 'Peter Halliday'
+maintainer_email 'pghalliday@gmail.com'
+license 'all_rights'
+description 'Configures OrangePi One'
+long_description 'Configures OrangePi One'
+version '0.1.0'
+depends 'apt'

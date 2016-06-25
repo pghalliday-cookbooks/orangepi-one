@@ -1,0 +1,7 @@
+{
+  "orangepi_one": {
+  },
+  "run_list": [
+    "recipe[orangepi_one::default]"
+  ]
+}
