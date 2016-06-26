@@ -39,12 +39,19 @@ Set the options for your environment if they differ.
 ```json
 {
   "orangepi_one": {
+    "password": "<PASSWORD_HASH>",
+    "authorized_keys": [
+      "<AUTHORIZED_KEY>",
+      ...
+    ],
     "ethernet": {
       "interface": "<INTERFACE_NAME>"
     },
     "wlan": {
       "interface": "<INTERFACE_NAME>",
       "wpa_options": {
+        ssid: "<ESSID>",
+        psk: "<PASS_PHRASE>",
         ...
       }
     }
@@ -53,6 +60,12 @@ Set the options for your environment if they differ.
     "recipe[orangepi_one::default]"
   ]
 }
+```
+
+Password hashes can be created with the following command
+
+```
+openssl passwd -1 "theplaintextpassword"
 ```
 
 Provision the machine.

@@ -1,5 +1,9 @@
 {
   "orangepi_one": {
+    "password": "<PASSWORD_HASH>",
+    "authorized_keys": [
+      "<AUTHORIZED_KEY>"
+    ],
     "ethernet": {
       "interface": "eth0"
     },
