@@ -1,4 +1,4 @@
-name 'orangepi_one'
+name 'wireless_camera'
 maintainer 'Peter Halliday'
 maintainer_email 'pghalliday@gmail.com'
 license 'all_rights'

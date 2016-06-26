@@ -1,8 +1,8 @@
-login_group = node['orangepi_one']['group']
-login_user = node['orangepi_one']['user']
-login_home = node['orangepi_one']['home']
-login_password = node['orangepi_one']['password']
-authorized_keys = node['orangepi_one']['authorized_keys']
+login_group = node['wireless_camera']['group']
+login_user = node['wireless_camera']['user']
+login_home = node['wireless_camera']['home']
+login_password = node['wireless_camera']['password']
+authorized_keys = node['wireless_camera']['authorized_keys']
 
 ssh_dir = ::File.join login_home, '.ssh'
 authorized_keys_file = ::File.join ssh_dir, 'authorized_keys'

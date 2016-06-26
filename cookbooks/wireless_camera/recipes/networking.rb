@@ -1,6 +1,6 @@
-ethernet_interface = node['orangepi_one']['ethernet']['interface']
-wlan_interface = node['orangepi_one']['wlan']['interface']
-wpa_options = node['orangepi_one']['wlan']['wpa_options']
+ethernet_interface = node['wireless_camera']['ethernet']['interface']
+wlan_interface = node['wireless_camera']['wlan']['interface']
+wpa_options = node['wireless_camera']['wlan']['wpa_options']
 
 package 'wpasupplicant'
 

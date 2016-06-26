@@ -1,5 +1,5 @@
 {
-  "orangepi_one": {
+  "wireless_camera": {
     "password": "<PASSWORD_HASH>",
     "authorized_keys": [
       "<AUTHORIZED_KEY>"
@@ -16,6 +16,6 @@
     }
   },
   "run_list": [
-    "recipe[orangepi_one::default]"
+    "recipe[wireless_camera::default]"
   ]
 }

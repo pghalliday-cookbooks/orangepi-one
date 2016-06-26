@@ -1,6 +1,6 @@
-# orangepi-one
+# wireless-camera
 
-Chef cookbooks to configure an OrangePI One
+Chef cookbooks to configure an OrangePI One as a wireless camera
 
 ## Prerequisites
 
@@ -28,8 +28,8 @@ sudo su -
 Recursively clone the repo
 
 ```
-git clone --recursive https://github.com/pghalliday-cookbooks/orangepi-one.git
-cd orangepi-one
+git clone --recursive https://github.com/pghalliday-cookbooks/wireless-camera.git
+cd wireless-camera
 ```
 
 Copy `attributes.example.json` to `attributes.json`
@@ -42,7 +42,7 @@ Set the options for your environment if they differ.
 
 ```json
 {
-  "orangepi_one": {
+  "wireless_camera": {
     "password": "<PASSWORD_HASH>",
     "authorized_keys": [
       "<AUTHORIZED_KEY>",
@@ -61,7 +61,7 @@ Set the options for your environment if they differ.
     }
   },
   "run_list": [
-    "recipe[orangepi_one::default]"
+    "recipe[wireless_camera::default]"
   ]
 }
 ```

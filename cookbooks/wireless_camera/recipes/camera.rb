@@ -1,6 +1,6 @@
-login_user = node['orangepi_one']['user']
-login_group = node['orangepi_one']['group']
-login_home = node['orangepi_one']['home']
+login_user = node['wireless_camera']['user']
+login_group = node['wireless_camera']['group']
+login_home = node['wireless_camera']['home']
 
 target_dir = ::File.join login_home, 'motion'
 
