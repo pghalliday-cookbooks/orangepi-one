@@ -54,8 +54,8 @@ Set the options for your environment if they differ.
     "wlan": {
       "interface": "<INTERFACE_NAME>",
       "wpa_options": {
-        ssid: "<ESSID>",
-        psk: "<PASS_PHRASE>",
+        "ssid": "<ESSID>",
+        "psk": "<PASS_PHRASE>",
         ...
       }
     }
