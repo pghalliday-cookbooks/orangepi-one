@@ -2,7 +2,7 @@
 auto lo
 iface lo inet loopback
 
-auto <%= @ethernet_interface %>
+allow-hotplug <%= @ethernet_interface %>
 iface <%= @ethernet_interface %> inet dhcp
 
 auto <%= @wlan_interface %>
