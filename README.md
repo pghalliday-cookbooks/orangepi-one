@@ -5,12 +5,15 @@ Chef cookbooks to configure an OrangePI One
 ## Prerequisites
 
 - Orange PI One
-- Armbian image from https://github.com/pghalliday-armbian/orangepi-one/releases
+- Ubuntu Xenial server Armbian image from http://mirror.igorpecovnik.com/Armbian_5.14_Orangepione_Ubuntu_xenial_3.4.112.7z
 - git
-- wget
+- ruby
+- ruby-dev
+- chef
 
 ```
-sudo apt-get install git wget
+sudo apt-get install git ruby ruby-dev
+sudo gem install -N chef
 ```
 
 ## Usage
