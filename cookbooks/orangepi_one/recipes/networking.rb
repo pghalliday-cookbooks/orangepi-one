@@ -16,6 +16,11 @@ template '/etc/network/interfaces' do
   notifies :run, 'bash[restart_network]', :delayed
 end
 
+link '/etc/resolv.conf' do
+  to '/run/resolvconf/resolv.conf'
+  notifies :run, 'bash[restart_network]', :delayed
+end
+
 bash 'restart_network' do
   code <<-EOH
   ifdown -a
