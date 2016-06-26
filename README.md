@@ -10,10 +10,11 @@ Chef cookbooks to configure an OrangePI One
 - ruby
 - ruby-dev
 - chef
+- ruby-shadow
 
 ```
 sudo apt-get install git ruby ruby-dev
-sudo gem install -N chef
+sudo gem install -N chef ruby-shadow
 ```
 
 ## Usage
