@@ -78,4 +78,6 @@ Provision the machine.
 chef-client -c client.rb
 ```
 
+This will configure wireless networking, install [`motion`](http://www.lavrsen.dk/foswiki/bin/view/Motion/WebHome) and set up a `camera` user with the given password and authorized SSH keys. Images and videos captured by `motion` will be placed under `/home/camera/motion`
+
 Update `attributes.json` and rerun `chef-client` as needed
